@@ -25,6 +25,16 @@ PostgreSQL — tabela sp_weather
 
 A DAG `projeto_weather_pipeline` executa o fluxo `extract → transform → load` a cada hora. Em caso de falha, cada tarefa pode realizar até duas novas tentativas, com intervalo de cinco minutos.
 
+## Pipeline em execução
+
+### DAG executada com sucesso no Airflow
+
+![DAG do pipeline meteorológico executada com sucesso](docs/images/airflow-dag-success.png)
+
+### Dados carregados no PostgreSQL
+
+![Dados meteorológicos armazenados no PostgreSQL](docs/images/postgres-weather-data.png)
+
 ## Tecnologias
 
 - Python
